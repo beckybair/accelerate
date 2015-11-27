@@ -25,6 +25,13 @@
     background: none repeat scroll 0 0 #45ac9d;
 }
 
+#masthead nav ul li {
+    text-transform: uppercase;
+    display: inline-block;
+	 margin-left: 35px;
+}
+
+
 /* Blog Posts on Homepage */
 .blog-post {
 	width: 50%;
@@ -48,3 +55,63 @@
 	text-transform: uppercase;
 }
 
+/* Cast Studies */
+
+article.case-study {
+   margin: 40px 0 0;
+}
+
+aside.case-study-sidebar {
+   float: left;
+   width: 314px;
+   margin: 0 40px 0 0;
+}
+
+div.case-study-images {
+   float: left;
+   width: 606px;
+}
+
+div.case-study-images img {
+   margin-bottom: 50px;
+   border: 1px solid #dddddd;
+}
+
+/* Homepage Feature Work */
+
+.featured {
+	padding: 0 0 10px 0;
+}
+
+.featured-work h4 {
+	font-family: 'Montserrat';
+	text-transform: uppercase;
+   text-align: center;
+}
+
+ul.homepage-featured-work {
+   list-style-type: none;
+   padding: 0;
+   margin: 0;
+   display: inline;
+}
+
+li.individual-featured-work {
+	display: inline;
+   float: left;
+}
+
+.individual-featured-work h3 {
+	font-size: 12px;
+	font-family: 'Montserrat';
+   text-align: center;
+}
+
+/* Archive Case Studies */
+
+h5.archive-case-study {
+   font-size: 14px;
+   color: grey;
+   padding: 0 0 20px 0;
+   font-family: 'Montserrat';
+}
