@@ -2,10 +2,10 @@
  Theme Name:   Accelerate Theme Child
  Theme URI:    http://example.com/accelerate-theme-child/
  Description:  Accelerate Child Theme - Accelerate
- Author:       Your Name!
+ Author:       Becky Bair
  Author URI:   http://example.com
  Template:     accelerate-theme
- Version:      1.0.0
+ Version:      1.1.0
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  accelerate-theme-child
 */
@@ -79,7 +79,7 @@ div.case-study-images img {
 
 /* Homepage Feature Work */
 
-.featured {
+.featured-work {
 	padding: 0 0 10px 0;
 }
 
@@ -87,6 +87,7 @@ div.case-study-images img {
 	font-family: 'Montserrat';
 	text-transform: uppercase;
    text-align: center;
+   margin:  0 0 40px;
 }
 
 ul.homepage-featured-work {
@@ -99,6 +100,7 @@ ul.homepage-featured-work {
 li.individual-featured-work {
 	display: inline;
    float: left;
+   padding: 0 10px 30px 10px;
 }
 
 .individual-featured-work h3 {
@@ -109,9 +111,276 @@ li.individual-featured-work {
 
 /* Archive Case Studies */
 
+aside.case-study-sidebar h5,
 h5.archive-case-study {
    font-size: 14px;
    color: grey;
    padding: 0 0 20px 0;
    font-family: 'Montserrat';
+}
+
+/* Contact */
+
+.page-content {
+	width: 650px;
+	margin:auto;
+	padding:0 10px;
+}
+
+#ninja_forms_field_1_div_wrap {
+	float: left;
+	width: 310px;
+	padding-right: 25px;
+}
+
+#ninja_forms_field_2_div_wrap {
+	float: left;
+	width: 310px;
+}
+
+#ninja_forms_field_1_label,
+#ninja_forms_field_2_label,
+#ninja_forms_field_3_label {
+	font-family: 'Open Sans';
+	font-size: 14pt;
+	font-weight: normal;
+}
+
+#ninja_forms_field_5 {
+	height: 55px;
+	width: 210px;
+	background-color: #45ac9d;
+	font-family: 'Open Sans';
+	color: #fff;
+	text-align: center;
+	font-weight: bold;
+	float: right;
+	margin-top: 40px;
+}
+
+/* About Page */
+
+#primary {
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 1250px;
+}
+
+.aboutpage-hero {
+	background: url("img/taxi-photo-about.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	margin-bottom: 0;
+	max-height: 310px;
+	max-width: 1250px;
+}
+
+#hero-statement p {
+	text-align: center;
+	font-size: 24px;
+	font-weight: 400;
+	color: #ffffff;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 55px;
+	height: 200px;
+	width: 550px;
+}
+
+#hero-statement .company-name {
+	color: #45ac9d;
+}
+
+article.about-accelerate {
+	font-family: 'Open Sans';
+	width: 850px;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#services {
+	width: 500px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;	
+}
+
+#services h4 {
+	text-transform: uppercase;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Montserrat';
+}
+
+#services p {
+	font-size: 16px;
+}
+
+#content-strategy, #influencer-mapping, #social-media, #design-development {
+	height: 300px;
+}
+
+#content-strategy .content-text {
+	float: right;
+	width: 575px;
+	margin-top: 16px;
+}
+
+#content-strategy .content-image {
+	float: left;
+	width: 275px;
+}
+
+#content-strategy .content-image img {
+	margin-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#influencer-mapping .influencer-text {
+	float: left;
+	width: 575px;
+	margin-top: 16px;
+}
+
+#influencer-mapping .influencer-image {
+	float: right;
+	width: 275px;
+}
+
+#influencer-mapping .influencer-image img {
+	margin-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#social-media .social-text {
+	float: right;
+	width: 575px;
+	margin-top: 16px;
+}
+
+#social-media .social-image {
+	float: left;
+	width: 275px;
+}
+
+#social-media .social-image img {
+	margin-right: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#design-development .design-text {
+	float: left;
+	width: 575px;
+	margin-top: 16px;
+}
+
+#design-development .design-image {
+	float: right;
+	width: 275px;
+}
+
+#design-development .design-image img {
+	margin-left: 40px;
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+
+#about-footer {
+    border-top-color: #e3e1e1;
+    border-top-style: dotted;
+    border-top-width: 1px;
+    margin-top: 40px;
+    padding-top: 20px;
+    width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#about-footer .contact-message {
+	width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+#about-footer .contact-message strong {
+	font-size: 24px;
+	padding-right: 2em;
+	float: left;
+}
+
+#about-footer .contact-message .button {
+	float: right;
+	font-weight: 400;
+	padding-left: 60px;
+	padding-right: 60px;
+}
+
+/* 404 Page */
+
+.error404 {
+	margin: 0;
+	padding-left: 0;
+	padding-right: 0;
+	width: 1250px;
+}
+
+.error404 .page-header .page-title {
+	color: #45ac9d;
+}
+
+#notfound {
+	margin-top: 100px;
+} 
+
+#notfound aside.nfimage {
+	float: left;
+	width: 480px;
+	height: 360px;
+}	
+
+.nfimage img {
+	width: 480px;
+	height: 360px;
+}	
+
+ #notfound .nftext {
+	float: right;
+	width: 420px;
+	margin-bottom: 100px;
+} 
+
+ #notfound .nftext .page-header {
+	padding-top: 0;
+	padding-bottom: 0;
+	margin-top: 20px;
+	border: none;
+} 
+
+#notfound .nftext .page-header h1 {
+	padding-top: 0;
+	margin-top: 0;
+	font-size: 40px;
+} 
+
+#notfound .nftext .page-content p {
+ 	font-size: 18px;
+ 	margin-bottom: 24px;
+ }
+ 
+ #notfound .nftext .page-content p a {
+	color: #45ac9d;
+	font-weight: 600;
+ }
+
+.site-footer-cartoon-credit {
+   font-size: 10px;
+	border-top: 1px dotted #e3e1e1;
+	width:960px;
+   clear: both;
+   margin: 40px auto;
+   color: #909090;
+   line-height: 1.5;
 }
