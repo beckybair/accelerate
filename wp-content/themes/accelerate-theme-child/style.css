@@ -31,32 +31,154 @@
 	 margin-left: 35px;
 }
 
+/* Blog layout fixes */
+section.blog-page div.site-content {
+   width: 1000px;
+}
+
+div.main-content {
+   width: 60%;
+   padding: 55px 40px 0 30px;
+}
+
+aside.sidebar {
+   padding: 55px 0 55px 20px;
+   width: 30%;
+}
+
+form.searchform label {
+	font-family: 'Montserrat';
+   font-size: small;
+   display: inherit;
+}
+
+form.searchform input[type="text"] {
+   font-size: small;
+   height: 25px;
+	font-family: 'Montserrat';
+}
+
+form.searchform input[type="submit"] {
+   background-color: #45ac9d;
+   color: #fff;
+   float: right;
+   height: 25px;
+   font-size: small;
+}
+
+aside#mc4wp_form_widget-2 {
+   padding: 10px 0 0 0;
+   margin: 10px 0 0 0;
+}
+
+div.mc4wp-form-fields {
+   margin: 10px 0;
+}
+
+div.mc4wp-form-fields p {
+   margin-bottom: 5px;
+}
+
+div.mc4wp-form-fields label {
+	font-family: 'Montserrat';
+   font-size: small;
+   display: inherit;
+}
+
+div.mc4wp-form-fields input[type="email"] {
+   font-size: small;
+   height: 25px;
+   width: 180px;
+	font-family: 'Montserrat';
+}
+
+div.mc4wp-form-fields input[type="submit"] {
+   background-color: #45ac9d;
+   color: #fff;
+   float: left;
+   height: 25px;
+   font-size: small;
+   margin-bottom: 30px;
+}
 
 /* Blog Posts on Homepage */
-.blog-post {
-	width: 50%;
+.recent-posts {
+	margin-top: 50px;
+   height: auto;
 }
+
+.blog-post {
+	width: 45%;
+   display: inline-block;
+   float: left;
+   padding: 10px 20px 0 0;
+   margin-bottom: 40px;
+}
+
 .blog-post h4 {
 	font-size: 16px;
 	font-family: 'Montserrat';
 	color: #a6a6a6;
 	text-transform: uppercase;
 }
+
 .blog-post h2 {
 	font-size: 24px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 }
+
 .blog-post .read-more-link {
-	font-size: 24px;
+	font-size: 18px;
 	font-family: 'Montserrat';
 	font-weight: bold;
 	color: #45ac9d;
 	text-transform: uppercase;
 }
 
-/* Cast Studies */
+/* Twitter on Homepage */
+div#secondary.widget-area {
+	width: 45%;
+   float: right;
+   display: inline-block;
+   padding: 0 0 0 20px;
+}
 
+.widget-area h4 {
+	font-size: 16px;
+	font-family: 'Montserrat';
+	color: #a6a6a6;
+	text-transform: uppercase;
+}
+
+.widget-area h2 {
+	font-size: 24px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+}
+
+ul.tweets {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+   display: inline;
+}
+
+.widget {
+	padding: 0 40px 0 0;
+   margin: 0 0 20px 0;
+}
+
+.widget-area .follow-us-link {
+	font-size: 18px;
+	font-family: 'Montserrat';
+	font-weight: bold;
+	color: #45ac9d;
+	text-transform: uppercase;
+}
+
+
+/* Cast Studies */
 article.case-study {
    margin: 40px 0 0;
 }
@@ -78,9 +200,9 @@ div.case-study-images img {
 }
 
 /* Homepage Feature Work */
-
 .featured-work {
 	padding: 0 0 10px 0;
+   height: 350px;
 }
 
 .featured-work h4 {
@@ -110,7 +232,6 @@ li.individual-featured-work {
 }
 
 /* Archive Case Studies */
-
 aside.case-study-sidebar h5,
 h5.archive-case-study {
    font-size: 14px;
@@ -120,7 +241,6 @@ h5.archive-case-study {
 }
 
 /* Contact */
-
 .page-content {
 	width: 650px;
 	margin:auto;
@@ -159,16 +279,8 @@ h5.archive-case-study {
 }
 
 /* About Page */
-
-#primary {
-	margin: 0;
-	padding-left: 0;
-	padding-right: 0;
-	width: 1250px;
-}
-
 .aboutpage-hero {
-	background: url("img/taxi-photo-about.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
+	background: url("img/taxi-photo.jpg") no-repeat scroll left center / cover rgba(0, 0, 0, 0);
 	margin-bottom: 0;
 	max-height: 310px;
 	max-width: 1250px;
@@ -312,14 +424,10 @@ article.about-accelerate {
 }
 
 #about-footer .contact-message .button {
-	float: right;
 	font-weight: 400;
-	padding-left: 60px;
-	padding-right: 60px;
 }
 
 /* 404 Page */
-
 .error404 {
 	margin: 0;
 	padding-left: 0;

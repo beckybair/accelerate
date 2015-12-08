@@ -39,18 +39,30 @@
             'rewrite' => array( 'slug' => 'case-studies' ),
         )
     );
-   register_post_type( 'custom_about', //assigns a unique name
-      array( //defines settings (many more options available)
-         'labels' => array(
-               'name' => __( 'About' ), //human-readable name, plural
-               'singular_name' => __( 'About' ) //human-readable name, singular
-         ),
-         'public' => true,
-         'has_archive' => true, //ensures posts are archived
-         'rewrite' => array( 'slug' => 'about' ), //defines URL slug for archive
-      )
-    );
 }
+
+// Register main sidebar - blog (optional) - also called the widget area (defensively) in sidebar.php
+register_sidebar( array(
+	'name' =>__( 'Main sidebar', 'accelerate-theme-child'),
+	'id' => 'sidebar-1',
+	'description' => __( 'Add widgets here to appear in your main sidebar.', 'accelerate-theme-child' ),
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<h2 class="widget-title">',
+	'after_title' => '</h2>',
+) );
+
+// Register second sidebar - for on Front Page template
+register_sidebar( array(
+	'name' =>__( 'Homepage sidebar', 'homepage-sidebar'),
+	'id' => 'sidebar-2',
+	'description' => __( 'Appears on the static front page template', 'homepage-sidebar' ),
+	'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+	'after_widget' => '</aside>',
+	'before_title' => '<h3 class="widget-title">',
+	'after_title' => '</h3>',
+) );
 
 // Hook this custom post type function into the theme
 add_action( 'init', 'create_custom_post_types' );
+
